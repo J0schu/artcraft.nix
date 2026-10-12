@@ -1,0 +1,55 @@
+name: update-lock
+
+on:
+  schedule:
+    - cron: "41 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  update-lock:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: cachix/install-nix-action@v31
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update flake.lock
+        run: nix flake update 2>&1 | tee "$RUNNER_TEMP/lock.txt"
+
+      - name: Detect changes
+        id: diff
+        run: |
+          if [ -n "$(git status --porcelain flake.lock)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Flake check
+        if: steps.diff.outputs.changed
+        run: nix flake check --all-systems --print-build-logs
+
+      - name: Build all apps
+        if: steps.diff.outputs.changed
+        run: nix build .#all --no-link --print-build-logs
+
+      - name: Commit and push
+        if: steps.diff.outputs.changed
+        run: |
+          { echo "chore: update flake.lock"; echo; cat "$RUNNER_TEMP/lock.txt"; } > "$RUNNER_TEMP/msg.txt"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add flake.lock
+          git commit -F "$RUNNER_TEMP/msg.txt"
+          git push

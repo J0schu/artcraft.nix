@@ -1,0 +1,63 @@
+name: check
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: cachix/install-nix-action@v31
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Nix formatting
+        run: nix fmt -- --ci
+
+      - name: shellcheck
+        run: nix develop --command shellcheck update.sh
+
+      - name: actionlint
+        run: nix develop --command actionlint
+
+      - name: sources.json is valid JSON
+        run: nix develop --command jq empty sources.json
+
+      - name: Flake check
+        run: nix flake check --all-systems --print-build-logs
+
+  build:
+    needs: lint
+    name: build (${{ matrix.system }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - system: x86_64-linux
+            runner: ubuntu-latest
+          - system: aarch64-linux
+            runner: ubuntu-24.04-arm
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: cachix/install-nix-action@v31
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build all apps
+        run: nix build .#all --no-link --print-build-logs

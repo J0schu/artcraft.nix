@@ -1,0 +1,60 @@
+name: update
+
+on:
+  schedule:
+    - cron: "23 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Update sources.json
+        id: update
+        continue-on-error: true
+        run: ./update.sh | tee "$RUNNER_TEMP/changes.txt"
+
+      - name: Detect changes
+        id: diff
+        run: git diff --quiet -- sources.json || echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - uses: cachix/install-nix-action@v31
+        if: steps.diff.outputs.changed
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build updated apps
+        if: steps.diff.outputs.changed
+        run: |
+          cut -d: -f1 "$RUNNER_TEMP/changes.txt" | sed 's/^/.#/' |
+            xargs nix build --no-link --print-build-logs
+
+      - name: Commit and push
+        if: steps.diff.outputs.changed
+        run: |
+          { echo "chore: update apps"; echo; cat "$RUNNER_TEMP/changes.txt"; } > "$RUNNER_TEMP/msg.txt"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sources.json
+          [ -f flake.lock ] && git add flake.lock
+          git commit -F "$RUNNER_TEMP/msg.txt"
+          git push
+
+      - name: Fail if some apps could not be updated
+        if: steps.update.outcome == 'failure'
+        run: |
+          echo "::error::update.sh failed for at least one app, see the 'Update sources.json' step"
+          exit 1
