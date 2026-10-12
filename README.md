@@ -45,7 +45,7 @@ Import the module and list the apps you want:
 ```nix
 { inputs, ... }:
 {
-  imports = [ inputs.artcraft.homeManagerModules.default ];
+  imports = [ inputs.artcraft.homeModules.default ];
 
   programs.artcraft = {
     enable = true;
