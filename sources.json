@@ -1,9 +1,9 @@
 {
   "photocraft": {
-    "version": "0.7.0",
+    "version": "0.8.2",
     "hashes": {
-      "x86_64-linux": "sha256-h+vONrzfazHRapyiLOKfmtjbaBheTZgRiADRwt54rEI=",
-      "aarch64-linux": "sha256-CupaCc+F1etJ9YpFvtidpXli2PPsOOGbX+SP+0RcM18="
+      "x86_64-linux": "sha256-XrZW3mhq9QTYFg1RmMLI1BTPi3qNPsxja8i6j7VkSKc=",
+      "aarch64-linux": "sha256-04fJTQOHDwn+LjW5rv2Iy2VAjS0P2JHjqMY+AwzyHNM="
     }
   },
   "vectorcraft": {
@@ -14,17 +14,17 @@
     }
   },
   "filmcraft": {
-    "version": "0.6.0",
+    "version": "0.7.2",
     "hashes": {
-      "x86_64-linux": "sha256-wLWl0PDnEXaqgGyJX4ylE/LVBbcP74W4dLviPJEjK8c=",
-      "aarch64-linux": "sha256-1plN0+JcVQURnrJ2PrNLWQpzaskNyuxgi3eqxNMwWzc="
+      "x86_64-linux": "sha256-q/kg2Y0BWGDh9brcbPBQfY+BFvXDKPf38kJfBoqzrug=",
+      "aarch64-linux": "sha256-0nZ7s2rjUEZa0HMX+ScCm1qJ+7FASZ2mSTY74MZtyEk="
     }
   },
   "lightcraft": {
-    "version": "0.6.0",
+    "version": "0.7.1",
     "hashes": {
-      "x86_64-linux": "sha256-V37wGNzuyNSYDS+bIHguw3hIFYuOZBnMkNMcK1gMGRk=",
-      "aarch64-linux": "sha256-zO/njsf2H3gErHK6D61dlfN7CwWdnk0WXp+yLTHC6z0="
+      "x86_64-linux": "sha256-eAeHlKa9jxAmA28lA6HPcWrSw7V+HKiyvcRkcgmcHkg=",
+      "aarch64-linux": "sha256-eJQZ/QOK6FegtcqhlozHJHrkecOBneq+2qQsEauRcz4="
     }
   },
   "pdfcraft": {
@@ -35,17 +35,17 @@
     }
   },
   "effectcraft": {
-    "version": "0.8.0",
+    "version": "0.9.2",
     "hashes": {
-      "x86_64-linux": "sha256-MSIdq2Mf7zo40UBUb/wqaVVFm4WYd4RagoLZqXI5s3M=",
-      "aarch64-linux": "sha256-B7CdN5Co4psF78GELMTgrsL9GSvDpb0EV0xVsHx7mBg="
+      "x86_64-linux": "sha256-9e8cKtMgUepsE7E8FwpzvW8tCoOaT/cYlbFqkNOjrjc=",
+      "aarch64-linux": "sha256-EwYxt3dDTw2EvriLLXqJkJpFCnC7VO2YvstAbQjS0bo="
     }
   },
   "designcraft": {
-    "version": "0.6.0",
+    "version": "0.7.1",
     "hashes": {
-      "x86_64-linux": "sha256-+2Ln56mt7i/X9ACyuiYJO5aoA0cKfY1HbjkZbwXEwDQ=",
-      "aarch64-linux": "sha256-jOSPSA5s+IObsiJnHGP9vBhBdyKzJRHWDqb18W2tAdA="
+      "x86_64-linux": "sha256-T7tdLSwvHWf7fhMeVKhUUxDEiSWMpaLVUJp6LF0/pZs=",
+      "aarch64-linux": "sha256-aqI5rvIKhW7YHxa5duXDoiB2/2QH7eSg2uNfthbjts4="
     }
   },
   "wordcraft": {
