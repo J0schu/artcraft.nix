@@ -7,38 +7,38 @@
     }
   },
   "vectorcraft": {
-    "version": "0.13.1",
+    "version": "0.14.0",
     "hashes": {
-      "x86_64-linux": "sha256-lUV7ubSLxjRBJMK/MqEGAGVIqllLG40djKR9UqMOV34=",
-      "aarch64-linux": "sha256-xc+sH2fWJiwPWZsgc5huRdHg1LRQe3L2deMwj2N7Agw="
+      "x86_64-linux": "sha256-iXV6HoBhZLlerizvm9+YvxoD7xCpssyKUL0FxUt0x5I=",
+      "aarch64-linux": "sha256-Wq36eRkIWlQ6tSYdd8TDjWQJZJPKekniLaMogJJvrZQ="
     }
   },
   "filmcraft": {
-    "version": "0.9.0",
+    "version": "0.10.0",
     "hashes": {
-      "x86_64-linux": "sha256-eE5M29iYLxe07IHK9TZ/0wjXChI6eqdLzNdCAhTAxEc=",
-      "aarch64-linux": "sha256-DBIodVa0rsTIn/x+ZYFkEbkWBsyKPpZC5q05UFEDbO0="
+      "x86_64-linux": "sha256-eHMYLFy6ZRMF/J90AT5TY39q0uqBj4d+LRpcBK3Z42E=",
+      "aarch64-linux": "sha256-mEynQrc/bGo8eHa5ougSB9+3Hujdv9hJDCFEr1l1EvA="
     }
   },
   "lightcraft": {
-    "version": "0.9.1",
+    "version": "0.10.0",
     "hashes": {
-      "x86_64-linux": "sha256-vQAoUalSQ0nJ2JIq4rhcmMJX3hZIDTt/iFgBo7ZLbRg=",
-      "aarch64-linux": "sha256-8jbCufcDvLDxx+7xmNNsiXCIZlnuLWIpWLdrw9QJFR8="
+      "x86_64-linux": "sha256-EJLXSO9fifmMWYBZZnAMwtHo15XokyHipdH1IDehf0A=",
+      "aarch64-linux": "sha256-X9w3mgricVT2CRAxDjWPvpZvQgm/HT7otZ4hUBhwjbU="
     }
   },
   "pdfcraft": {
-    "version": "0.9.0",
+    "version": "0.10.1",
     "hashes": {
-      "x86_64-linux": "sha256-+FaMh5BtloRhBS8LVwl8C4S3Cze/ZJybUE2MHretDPo=",
-      "aarch64-linux": "sha256-6vBd0cRYziB+nZn8116KPgyXE2wl++fpClC4bHZ7O7s="
+      "x86_64-linux": "sha256-4ze3GGJq2zTCAyj+ugRWNSpY+BVq2ptGnMX126I1LlY=",
+      "aarch64-linux": "sha256-ecdrq5W8Xlv9OEm/RNMEjZElr8APz5xRWpqUlcBoZNI="
     }
   },
   "effectcraft": {
-    "version": "0.11.1",
+    "version": "0.13.0",
     "hashes": {
-      "x86_64-linux": "sha256-Ix5g82czTX6FiR/mU8SkNKoJPCExPh7Mj+FFm2/Vg3k=",
-      "aarch64-linux": "sha256-FPhp96K9OKtC/+3KcAYiZDJtHecKFvOa8a5ZiRGkLgk="
+      "x86_64-linux": "sha256-sdPo4wM7B7ZU/J2PC66iQdpIcD+ZJdex6jz6l2/YeGg=",
+      "aarch64-linux": "sha256-+tdXZvao6+f1/bpLklo4/OX5yOWGu27HCYi3H24cbQ0="
     }
   },
   "designcraft": {
@@ -49,10 +49,10 @@
     }
   },
   "wordcraft": {
-    "version": "0.8.0",
+    "version": "0.9.0",
     "hashes": {
-      "x86_64-linux": "sha256-ffezpQFyug7ehaLEuDw2CvkrHDdnyLMMOWPr8F02q5w=",
-      "aarch64-linux": "sha256-osaVoGTI2hO9AOEYJYusXN+pt+bcfY89/dh/VhKY52o="
+      "x86_64-linux": "sha256-UCKjLR/2LUZBAQwZ/cFrhlUWhoZTevnTBhWgPTTGr7A=",
+      "aarch64-linux": "sha256-zWPxTXmbKWP5IIN4npSBc9yMQhUnHyPwg32Vd+XrbRg="
     }
   },
   "soundcraft": {
@@ -63,17 +63,17 @@
     }
   },
   "deckcraft": {
-    "version": "0.8.0",
+    "version": "0.9.0",
     "hashes": {
-      "x86_64-linux": "sha256-XCTgw9UscQIZ+2uJfL8uhW4PbdTcebeizvwdLVUTTtA=",
-      "aarch64-linux": "sha256-o/9JjKrDu+inIpfe1j2UzY94MVoP+vMLavdxfOLfn9I="
+      "x86_64-linux": "sha256-RQb41H9E53m3RjqHLg/DX+qZ7t+c7/J2AcjBNEuSigU=",
+      "aarch64-linux": "sha256-RT+yFZZwqzcbrrX8zESk1qV/3QPFZLUx7AtqS6V7yu4="
     }
   },
   "cadcraft": {
-    "version": "0.8.0",
+    "version": "0.10.0",
     "hashes": {
-      "x86_64-linux": "sha256-JPd+NyvwcjP3JnJFi8aRNdVLyfa7Y3ntc3hwp8EVK9I=",
-      "aarch64-linux": "sha256-oZgrRhGwu7gLjpxTYCORiQ1jglmuo8IDlKGXyssM9lQ="
+      "x86_64-linux": "sha256-8mwsBdoiPDGJ0IxQrEMbnQc4YipLPYtENct+ypnKpgc=",
+      "aarch64-linux": "sha256-fLH8Jf6I5vXFrBIX0mE2vn/VT65cxECHNYnB0owqxMc="
     }
   },
   "gridcraft": {
