@@ -1,9 +1,9 @@
 {
   "photocraft": {
-    "version": "0.14.0",
+    "version": "0.15.1",
     "hashes": {
-      "x86_64-linux": "sha256-YtMZWSFZ+OaQniUhURltI9m3okP8n5CV5a347LrJ8Dw=",
-      "aarch64-linux": "sha256-6GL7y4h3tWNdNXlqMV7b+bi9kKHOtSQ1fAgAxYzejxo="
+      "x86_64-linux": "sha256-fZbz0NoZIdY0YgsNTNo3y/M1OnZ/kguQbOHGZnOA/+0=",
+      "aarch64-linux": "sha256-GlanyK/nif3n4GKoHqxq2NORrLKX10TTVAG3mibWuTE="
     }
   },
   "vectorcraft": {
