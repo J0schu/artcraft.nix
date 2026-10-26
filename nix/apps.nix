@@ -5,6 +5,7 @@
   lightcraft.description = "Photo library and non-destructive raw developer";
   pdfcraft.description = "Read, organize, combine, split and secure PDFs";
   effectcraft.description = "Motion graphics and visual effects compositor";
+  figcraft.description = "Interface design and prototyping tool";
   designcraft.description = "Page layout for magazines, books and print documents";
   wordcraft.description = "Word processor for documents and reports";
   soundcraft.description = "Multitrack audio recording, editing and mixing";
