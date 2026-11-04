@@ -28,10 +28,10 @@
     }
   },
   "pdfcraft": {
-    "version": "0.18.0",
+    "version": "0.18.1",
     "hashes": {
-      "x86_64-linux": "sha256-P9R34y8gaAzwwtmGQl94OhcXiIab6QvlVuWHi1sjGL8=",
-      "aarch64-linux": "sha256-Nd6gQqhKCBjeLnYRzyS5N9lrZGBMDNdojA4YQas0szg="
+      "x86_64-linux": "sha256-TOYaj08TdFkedGjweke+VCWUweMdZg2aXVOd2+hQEMY=",
+      "aarch64-linux": "sha256-jzC+Q2K6URn2OI+UiwuIOGl3Voc2/8iWHPLO7gtBstQ="
     }
   },
   "effectcraft": {
@@ -56,10 +56,10 @@
     }
   },
   "wordcraft": {
-    "version": "0.15.0",
+    "version": "0.15.1",
     "hashes": {
-      "x86_64-linux": "sha256-96lV0sUbA2v+WgM/Sk7E/wwrEeyN/LslIIe5rTqi7K0=",
-      "aarch64-linux": "sha256-NQmOyrvUWR2G/6dM62GOgtl2/keo64F33NOUAIijbrM="
+      "x86_64-linux": "sha256-6PRPu/BZ8S9c1PadeBJSlynYXTbdT+dKbDf2kyYy8vo=",
+      "aarch64-linux": "sha256-SJvsmsDEQbz8MMFKf1xxPZcVRei7WzCv0l2bgWR3mq4="
     }
   },
   "soundcraft": {
