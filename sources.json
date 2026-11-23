@@ -35,10 +35,10 @@
     }
   },
   "effectcraft": {
-    "version": "0.24.1",
+    "version": "0.25.1",
     "hashes": {
-      "x86_64-linux": "sha256-n4oWz3QUfJ4qw7ZfpvW+lqPhDq2S3fCNVE9dOZCtZNw=",
-      "aarch64-linux": "sha256-iYmPo0buXFmzgV8k2zGBeMojpLWTdpvdhA2oH3L00G8="
+      "x86_64-linux": "sha256-faFPXKggJ+LLcJ3JGAbHDOQf9DKt8n0tCjeInSG3obo=",
+      "aarch64-linux": "sha256-esL7nvN6kcdCUTTx8LjqwHkaUxk0klKY3tA9och+xsw="
     }
   },
   "figcraft": {
@@ -49,10 +49,10 @@
     }
   },
   "designcraft": {
-    "version": "0.20.1",
+    "version": "0.21.1",
     "hashes": {
-      "x86_64-linux": "sha256-+db9a7GkIYUCQ8DUvkQjVxOp7Fsm+L8dW6h6/Pj5FTQ=",
-      "aarch64-linux": "sha256-FOZBLMixVjNXHAsJhpuJ8j6irGGz5oGbOyYoTpK2hpM="
+      "x86_64-linux": "sha256-uwj2OcoDbaDScayh8fTJvXEUFcT34IW8G/Qtex9uDAM=",
+      "aarch64-linux": "sha256-UTvvbRhMLngzDSZJC+f3xJVQTKr4j6i2FJAZKo+wPnk="
     }
   },
   "wordcraft": {
