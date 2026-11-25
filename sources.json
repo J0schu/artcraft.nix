@@ -56,10 +56,10 @@
     }
   },
   "wordcraft": {
-    "version": "0.18.1",
+    "version": "0.19.1",
     "hashes": {
-      "x86_64-linux": "sha256-u8XBWwbUQDz9WllHW9+SZKScK88fktEjMRtQqdzjyIg=",
-      "aarch64-linux": "sha256-EemhHA3JJMKiYSB9jPRe4jKTC/BpJTOi6YQjf2geBzw="
+      "x86_64-linux": "sha256-EBdv+ouLTg0phRbGVrIBlZu4KARE8FnXuIOLamkVkN4=",
+      "aarch64-linux": "sha256-716JOpOU0DE2/oh8BWPnlaE4QonHXzv1AJWyoASNIIw="
     }
   },
   "soundcraft": {
@@ -70,10 +70,10 @@
     }
   },
   "deckcraft": {
-    "version": "0.18.1",
+    "version": "0.19.1",
     "hashes": {
-      "x86_64-linux": "sha256-aN+fBA0/bEzkqQSq3sYzlh+hmSSPChqjZvpkWXrgmGc=",
-      "aarch64-linux": "sha256-iUyx3HlGkY/+bwzc4y2eIVfRSfrqZzdjgWQIPV5WJhU="
+      "x86_64-linux": "sha256-gpXQ+3lbvQx6uK6XzfCZPh5s8U2QqsNaq3i4Ftzaov4=",
+      "aarch64-linux": "sha256-VIIAuLGt95xyhgpAq+HG8tf0GJpKlHVmiHO1cy2MTwA="
     }
   },
   "cadcraft": {
